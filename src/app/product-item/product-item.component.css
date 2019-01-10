@@ -1,0 +1,8 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+.card.ml-2 {
+    float: left;
+}
+
+.card-title>span, .card-text>span {
+    font-weight: 900;
+}

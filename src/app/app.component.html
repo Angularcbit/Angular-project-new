@@ -1,0 +1,55 @@
+<div class="container">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">MBILES</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/products" tabindex="-1" aria-disabled="true">Products</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <!-- <button class="text-white btn btn-outline-light my-2 my-sm-0" type="submit">Cart</button> -->
+        </form>
+        <div>
+            <a class="text-white btn btn-outline-light my-2 my-sm-0" routerLink="/cart" tabindex="-1" aria-disabled="true">Cart</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="bg-light main-section mt-5">
+    <div class="product-categories">
+      <ul class="list-group">
+        <li class="list-group-item">Sensors</li>
+        <li class="list-group-item">Wireless</li>
+        <li class="list-group-item">Processors</li>
+        <li class="list-group-item">Breakout Boards</li>
+        <li class="list-group-item">Power Supplies</li>
+        <li class="list-group-item">Motor and Motor Drivers</li>
+        <li class="list-group-item">Robotic Parts</li>
+        <li class="list-group-item">GPS and GSM</li>
+        <li class="list-group-item">Discrete Components</li>
+        <li class="list-group-item">PCB's</li>
+      </ul>
+    </div>
+    <div class="product-space">
+        <router-outlet></router-outlet>
+    </div>
+  </main>
+  <footer></footer>
+</div>
+

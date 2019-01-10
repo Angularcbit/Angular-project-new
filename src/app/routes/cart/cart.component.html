@@ -1,0 +1,23 @@
+<div class="mt-2 ml-3 mr-3">
+  <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">S.No</th>
+          <th scope="col">Item</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Unit Price</th>
+          <th scope="col">Total Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products; index as i">
+          <th scope="row">{{i}}</th>
+          <td>{{product.title}}</td>
+          <td>{{product.cartQuantity}}</td>
+          <td>{{product.price}}</td>
+          <td>{{product.price * product.cartQuantity}}</td>
+        </tr>
+      
+      </tbody>
+    </table>
+</div>

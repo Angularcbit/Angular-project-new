@@ -1,0 +1,21 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.main-section {
+    width: 100%;
+    min-height: 800px;
+    overflow: hidden;
+}
+
+.product-categories {
+    width: 20%;
+    border-right: 1px solid rgba(220, 220, 220, 0.5);
+    min-height: 800px;
+    float: left;
+}
+
+.product-space {
+    width: 80%;
+    min-height: 800px;
+    float: left;
+    box-sizing: content-box;
+}
